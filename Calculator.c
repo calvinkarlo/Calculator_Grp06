@@ -1,4 +1,6 @@
 # include <stdio.h>
+
+
 int main() {
     char operator;
     double firstNumber,secondNumber;
@@ -16,6 +18,7 @@ int main() {
             break;
         case '*':
             printf("%.1lf * %.1lf = %.1lf",firstNumber, secondNumber, firstNumber * secondNumber);
+            multip(firstNumber,secondNumber)
             break;
         case '/':
             printf("%.1lf / %.1lf = %.1lf",firstNumber, secondNumber, firstNumber / secondNumber);
@@ -26,4 +29,12 @@ int main() {
     }
     
     return 0;
+}
+
+double multip (double a, double b)
+{
+//Matthew Paladine Rivera
+double product;
+product = a*b;
+printf("%d",product);
 }
